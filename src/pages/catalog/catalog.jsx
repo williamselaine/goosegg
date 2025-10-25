@@ -77,7 +77,6 @@ const styles = {
     cursor: "pointer",
     opacity: "0.5",
     transition: "opacity 0.5s",
-    transition: 'color 0.5s',
     float: "right",
     "&:hover": {
       opacity: "0.4",
