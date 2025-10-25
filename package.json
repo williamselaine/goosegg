@@ -1,5 +1,6 @@
 {
-  "name": "portfolio",
+  "name": "goosegg",
+  "homepage": "https://williamselaine.github.io/goosegg",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
