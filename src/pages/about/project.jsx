@@ -1,7 +1,6 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
 import { jsx } from "@emotion/react";
-import github from "../../assets/github.png";
 import deployment from "../../assets/link.png";
 import { colors, type } from "../../constants";
 import PropTypes from "prop-types";
@@ -101,16 +100,6 @@ const Project = ({
     >
       <div css={styles.projectHeader}>
         <h1 css={styles.subtitle}>{title}</h1>
-        {repo_link && (
-          <a href={repo_link}>
-            <img css={styles.ghLink} src={github} alt={repo_link} />
-          </a>
-        )}
-        {link && (
-          <a href={link}>
-            <img css={styles.ghLink} src={deployment} alt={link} />
-          </a>
-        )}
       </div>
       <div
         css={
