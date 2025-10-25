@@ -1,7 +1,6 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
 import { jsx } from "@emotion/react";
-import deployment from "../../assets/link.png";
 import { colors, type } from "../../constants";
 import PropTypes from "prop-types";
 import MediaColumn from "./mediaColumn";
