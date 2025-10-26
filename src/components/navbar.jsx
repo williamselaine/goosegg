@@ -40,6 +40,7 @@ const Navbar = ({ width, height }) => {
       zIndex: 9999,
       opacity: '1.0',
       transition: 'opacity 0.5s',
+      padding: '0px'
     },
     modalHide: {
       position: 'absolute',
@@ -77,7 +78,7 @@ const Navbar = ({ width, height }) => {
       transition: "background-color 1s",
       a: {
         color: colors.purple,
-        font: type.h4,
+        font: type.h3,
         transition: "color 1s",
       },
       "&:hover": {
