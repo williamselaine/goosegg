@@ -28,6 +28,7 @@ const Navbar = ({ width, height }) => {
     opacity: 1;
     animation-delay: 1.25s;
     z-index: 5;
+    padding: 0px;
   `;
   const styles = {
     modal: {
