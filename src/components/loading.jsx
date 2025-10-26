@@ -2,8 +2,9 @@
 /** @jsx jsx */
 import PropTypes from "prop-types";
 import { jsx, css, keyframes } from "@emotion/react";
-import { colors, type } from "../constants";
+import { colors, type, breakpoints } from "../constants";
 import { useTypewriter } from "../hooks";
+import { useEffect, useState } from 'react';
 
 const MAX_CIRCLE_SIZE = "120px";
 const MIN_CIRCLE_SIZE = "64px";
@@ -83,7 +84,7 @@ const delayedAnimatedCircle = css`
   animation-delay: ${AnimationConstants.offset}ms;
 `;
 
-const Loading = ({ show }) => {
+const Loading = ({ show, width }) => {
   const styles = {
     container: {
       position: "absolute",
@@ -128,7 +129,8 @@ const Loading = ({ show }) => {
       fontSize: '24px',
     },
   };
-  const fullName = "goosegg studios";
+  const isMobile = window.innerWidth < breakpoints.mobile;
+  const fullName = isMobile ? "goosegg" : "goosegg studios";
   const name = useTypewriter(fullName, 35, 1500);
 
   return (

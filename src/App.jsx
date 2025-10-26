@@ -77,7 +77,7 @@ const Paths = ({ width }) => {
   }, []);
 
   return (
-    <Suspense fallback={<Loading show={false} />}>
+    <Suspense fallback={<Loading show={false} width={width} />}>
       <Switch>
         <Route exact path="/">
           <Home width={width} {...homeContent} />

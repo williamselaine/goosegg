@@ -53,6 +53,9 @@ const styles = {
     backgroundColor: colors.darkpink,
     padding: '10px',
   },
+  coverMobile: {
+    maxWidth: '300px',
+  },
   row: {
     display: 'flex',
     flexDirection: 'row',
