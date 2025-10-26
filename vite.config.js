@@ -9,7 +9,7 @@ export default defineConfig(() => {
       },
       outDir: "dist",
     },
-    base: "/",
+    base: "/goosegg",
     plugins: [react()],
   };
 });
