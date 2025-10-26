@@ -5,7 +5,7 @@ import { disableBodyScroll, enableBodyScroll } from "body-scroll-lock";
 import { jsx } from "@emotion/react";
 import PropTypes from "prop-types";
 import { colors } from "./constants";
-import { Home } from "./pages";
+import { Home, Impressum } from "./pages";
 import { Navbar, Loading } from "./components";
 import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import { useSizeListener, useDelayedUnmount } from "./hooks";
@@ -82,11 +82,14 @@ const Paths = ({ width }) => {
         <Route exact path="/">
           <Home width={width} {...homeContent} />
         </Route>
-        <Route path="/about">
+        <Route path="/about">\
           <About width={width} {...aboutContent} />
         </Route>
         <Route path="/catalog">
           <Catalog width={width} {...catalogContent} />
+        </Route>
+        <Route path="/impressum">
+          <Impressum />
         </Route>
       </Switch>
     </Suspense>

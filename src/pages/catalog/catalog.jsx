@@ -2,8 +2,8 @@
 /** @jsx jsx */
 import PropTypes from "prop-types";
 import { jsx } from "@emotion/react";
-import { colors, type } from "../../constants";
-import { useEffect, useState } from 'react';
+import { colors, type, breakpoints } from "../../constants";
+import { useState } from 'react';
 
 const styles = {
   parent: {
@@ -113,7 +113,8 @@ const styles = {
   }
 };
 
-const Catalog = ({ content, photos, icons, videos }) => {
+const Catalog = ({ content, photos, icons, videos, width }) => {
+  const [isMobile, setIsMobile] = useState(width < breakpoints.tablet);
   const [tab, setTab] = useState(0);
 
   return content ? (

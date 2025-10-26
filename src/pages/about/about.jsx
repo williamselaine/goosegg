@@ -1,6 +1,7 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
 import { useState, useEffect } from "react";
+import { Link } from 'react-router-dom';
 import PropTypes from "prop-types";
 import { jsx } from "@emotion/react";
 import { colors, type, breakpoints } from "../../constants";
@@ -174,12 +175,7 @@ const About = ({ width, content, photos, videos, icons }) => {
       })}
       </div>
         <div css={styles.impressum}>
-          <span css={styles.impressumTitle}>Impressum</span>
-          <div css={styles.impressumContent}>
-            Lukas May-Floor <br />
-            Karl-Elsasser-Str. 19  <br />
-            12347 Berlin
-          </div>
+          <Link to="/impressum">Impressum</Link>
         </div>
     </div>
   ) : (
