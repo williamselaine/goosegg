@@ -71,7 +71,7 @@ const styles = {
     }
   },
   videoCoverMobile: {
-    maxWidth: '300px',
+    maxHeight: '200px',
   },
   button: {
     marginTop: "10px",
