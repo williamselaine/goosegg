@@ -58,6 +58,9 @@ const styles = {
       opacity: '0.6',
     }
   },
+  coverMobile: {
+    maxWidth: "300px",
+  },
   videoCover: {
     maxHeight: "180px",
     margin: "10px 10px",
@@ -66,6 +69,9 @@ const styles = {
     "&:hover": {
       opacity: '0.6',
     }
+  },
+  videoCoverMobile: {
+    maxWidth: '300px',
   },
   button: {
     marginTop: "10px",
@@ -129,7 +135,7 @@ const Catalog = ({ content, photos, icons, videos }) => {
                 target="_blank"
                 key={index}
                 >
-                  <img src={Object.values(photo)[0].src} css={styles.cover} alt={release.title} key={index} />
+                  <img src={Object.values(photo)[0].src} css={isMobile ? {...styles.cover, ...styles.coverMobile} : styles.cover} alt={release.title} key={index} />
               </a>
             );
             }
@@ -148,7 +154,7 @@ const Catalog = ({ content, photos, icons, videos }) => {
                   target="_blank"
                   key={index}
                   >
-                  <img src={Object.values(photo)[0].src} css={styles.videoCover} alt={release.title} key={index} />
+                  <img src={Object.values(photo)[0].src} css={isMobile ? {...styles.videoCover, ...styles.videoCoverMobile} : styles.videoCover} alt={release.title} key={index} />
               </a>
               <span css={styles.videoTitle}>{release.title}</span>
               </div>
