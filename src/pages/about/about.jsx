@@ -81,22 +81,17 @@ const styles = {
     maxWidth: '400px',
     padding: '10px',
   },
-  impressum: {
+  impressumTitle: {
+    font: type.body,
+    color: colors.purple,
+  },
+    impressum: {
     marginTop: '30px',
     display: 'flex',
     flexDirection: 'column',
     width: '100%',
     alignItems: 'center',
   },
-  impressumTitle: {
-    font: type.body,
-    color: colors.darkgray,
-  },
-  impressumContent: {
-    textAlign: 'center',
-    font: type.bodyXS,
-    color: colors.darkgray
-  }
 };
 
 const About = ({ width, content, photos, videos, icons }) => {
@@ -174,9 +169,9 @@ const About = ({ width, content, photos, videos, icons }) => {
         );
       })}
       </div>
-        <div css={styles.impressum}>
-          <Link to="/impressum">Impressum</Link>
-        </div>
+      <div css={styles.impressum}>
+          <Link css={styles.impressumTitle} to="/impressum">Impressum</Link>
+      </div>
     </div>
   ) : (
     <div />

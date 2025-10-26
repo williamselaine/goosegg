@@ -1,6 +1,6 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */import { jsx } from "@emotion/react";
-import { colors } from "../../constants";
+import { colors, type } from "../../constants";
 
 const styles = {
   imp: {
@@ -8,6 +8,7 @@ const styles = {
     marginTop: '50px',
     textAlign: 'center',
     color: colors.white,
+    font: type.body,
   },
 }
 
