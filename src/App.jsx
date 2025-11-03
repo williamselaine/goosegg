@@ -55,6 +55,7 @@ const Paths = ({ width }) => {
   const [homeContent, setHomeContent] = useState();
   const [aboutContent, setAboutContent] = useState();
   const [catalogContent, setCatalogContent] = useState();
+  const [linksContent, setLinksContent] = useState();
 
   useEffect(() => {
     (async () => {

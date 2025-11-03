@@ -48,7 +48,6 @@ const Navbar = ({ width, height }) => {
       top: '0px',
       width: '100%',
       height: '100%',
-      pointerEvents: 'unset',
       pointerEvents: 'none',
       transition: 'opacity 0.5s',
       opacity: '0.0',
