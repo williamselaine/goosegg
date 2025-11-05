@@ -41,7 +41,7 @@ class ContentFetchService {
         // sort arrays which contain an indexing element
         Object.keys(content).forEach((key) => {
           if (content[key][0] && content[key][0].hasOwnProperty("index")) {
-            content[key].sort((a, b) => a.index - b.index);
+            content[key].sort((a, b) => b.index - a.index);
           }
         });
         this.content = content;
